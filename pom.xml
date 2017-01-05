@@ -13,6 +13,9 @@
 
     <modules>
         <module>users-microservice</module>
+        <module>discovery-microservice</module>
+        <module>consul-microservice</module>
+        <module>config-microservice</module>
     </modules>
 
     <parent>
@@ -27,6 +30,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <java.version>1.8</java.version>
+        <docker.plugin.version>0.4.13</docker.plugin.version>
     </properties>
 
     <dependencies>
