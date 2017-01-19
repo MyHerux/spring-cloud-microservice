@@ -15,6 +15,7 @@
         <module>users-service</module>
         <module>discovery-microservice</module>
         <module>web-client-ribbon</module>
+        <module>web-client-feign</module>
     </modules>
 
     <parent>
