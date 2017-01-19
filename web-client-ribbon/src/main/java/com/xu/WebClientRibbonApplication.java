@@ -9,7 +9,7 @@ import org.springframework.web.client.RestTemplate;
 
 @SpringBootApplication
 @EnableDiscoveryClient
-public class WebClientApplication {
+public class WebClientRibbonApplication {
 
     @Bean
     @LoadBalanced
@@ -18,7 +18,7 @@ public class WebClientApplication {
     }
 
     public static void main(String[] args) {
-        SpringApplication.run(WebClientApplication.class, args);
+        SpringApplication.run(WebClientRibbonApplication.class, args);
     }
 
 }

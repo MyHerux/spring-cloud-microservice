@@ -10,6 +10,7 @@ import org.springframework.web.client.RestTemplate;
 public class ConsumerController {
     @Autowired
     private RestTemplate restTemplate;
+
     @RequestMapping(value = "/add", method = RequestMethod.GET)
     public String add() {
         return restTemplate.getForEntity("http://USER-SERVICE/add?name=xu", String.class).getBody();
